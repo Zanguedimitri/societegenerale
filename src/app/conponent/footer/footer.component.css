@@ -1,0 +1,29 @@
+
+.contact{
+  padding: 30px;
+  background-color: #F5F7F9;
+}
+.contact__title{
+  color: #C8CDD3;
+  font-size: 13px;
+}
+.contact__list>li{
+  list-style: none;
+  padding: 4px;
+}
+.footer{
+  background-color: #2e343e;
+  padding: 40px;
+}
+.footer_top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer_bottom span{
+  color: white;
+  border-right: 1px solid #F5F7F9;
+  margin-right: 20px;
+  padding-right: 20px;
+
+}

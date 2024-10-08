@@ -1,0 +1,92 @@
+
+.container{
+  margin: 50px;
+}
+.title{
+  display: flex;
+}
+.title_bar{
+  background-color: red;
+  width: 2px;
+  height: 30px;
+  margin-right: 10px;
+}
+.title_name{
+font-size: 30px;
+line-height: 33px;
+text-align: right;
+
+}
+
+.table_item,.table{
+ padding: 10px;
+ text-align: center;
+ border: 1px solid #F2F2F2;
+
+ border-collapse: collapse;
+}
+.table_item th{
+  text-align: left;
+  color: #8696A6;
+  padding: 10px;
+}
+.table_item td{
+  text-align: left;
+  padding: 10px;
+}
+.table_item--bleu{
+  color: blue;
+}
+.table_item--red{
+  color: red;
+}
+.table_item--green{
+  color: green;
+}
+.table{
+ border-bottom: 2px solid ;width: 100%
+}
+.content{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F5F7F9;
+  height: 550px;
+  margin-top: 45px;
+
+}
+.content_title{
+  height: 95px;
+width: 690px;
+padding-top: 20px;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 95px;
+  width: 650px;
+  margin: 14px;
+  padding: 20px;
+}
+
+.box span{
+  padding: 5px;
+}
+.box_type{
+  color: #E60028;
+  font-size: 17px;
+  padding:5px ;
+
+}
+.box_work{
+font-size: 25px;
+padding:5px ;
+}
+.box_city{
+  display: flex;
+  align-items: center;
+  padding:5px ;
+}

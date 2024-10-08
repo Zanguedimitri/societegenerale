@@ -1,0 +1,38 @@
+
+/*header top*/
+.header__top{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+.header__top__user{
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+}
+.header__top__user--red{
+  background-color: red;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+/*header bottom*/
+.header__bottom{
+  border-collapse: collapse;
+}
+.header__bottom__menu{
+  border: 1px solid black;
+}
+.header__bottom__menu th{
+  border: 1px solid #E5E5E5;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  width: 10em;
+}
+.header__bottom__menu th:hover{
+  background-color: #E3E3E3;
+}

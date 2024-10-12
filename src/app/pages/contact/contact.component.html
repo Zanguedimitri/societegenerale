@@ -1,1 +1,119 @@
-<p>contact works!</p>
+
+
+<div class="cadre">
+  <div class="cadre__title">
+      <span style="background-color: white; height: 20px; width: 2px; display: block; margin-bottom: 10px;"></span>
+      <span> Programme de recrutement de jeunes cadres</span>
+  </div>
+</div>
+<div style="margin: 40px;">
+
+  <div>
+      <form action="" [formGroup]="user" >
+          <div class="form">
+              <div class="form_title">
+                  <div class="form_first_title">
+                      <span>Offres disponibles > </span>
+                      <span> Offre #324</span>
+                  </div>
+                  <div class="form_second_title">
+                      <span></span>
+                      <h3>Offre #324: International Marketing Project Manager H/F</h3>
+                  </div>
+              </div>
+              <div class="form_champ">
+                  <label class="form_label" for="name">NOM</label>
+                  <input class="form_input" type="text" formControlName="name" >
+              </div>
+              <div class="form_champ">
+                  <label class="form_label" for="prenom">PRENOM</label>
+                  <input class="form_input" type="text" formControlName="prenom" >
+              </div>
+              <div class="form_double">
+                  <div class="form_champ--rigth">
+                      <label class="form_label" for="date">DATE DE NAISSANCE</label>
+                      <input class="form_input" type="date" formControlName="date">
+                  </div>
+                  <div class="form_champ--rigth">
+                      <label class="form_label" for="lieu">LIEU DE NAISSANCE</label>
+                      <input class="form_input" type="text" formControlName="lieu">
+                  </div>
+              </div>
+              <div class="form_champ">
+                  <label class="form_label" for="mail">ADRESSE E-MAIL</label>
+                  <input class="form_input" type="email" formControlName="email" >
+              </div>
+              <div class="form_champ">
+                  <label class="form_label" for="">NIVEAU D'ETUDES</label>
+                  <input class="form_input" type="text" formControlName="niveau">
+              </div>
+              <div class="form_champ">
+                  <label class="form_label" for="">DOMAINE D'ETUDES</label>
+                  <input class="form_input" type="text" formControlName="domaine" >
+              </div>
+              <div class="form_champ--line">
+                  <label for="">Telecharger votre CV:</label>
+                  <span>"john_newmann.pdf"</span>
+                  <button>Upload</button>
+                  <input type="button" value="APPERÇU">
+              </div>
+          </div>
+          <div style="margin: 10px 0px 10px 60px;">
+              <p style="padding: 18px 0px 8px 0px;">Entrer vos differentes experiences professionnelles:</p>
+              <table class="table" style="width: 100%;">
+                  <tr class="table_line">
+                      <th>DEBUT</th>
+                      <th>FIN</th>
+                      <th>INTITULÉ DU POSTE</th>
+                      <th>DESCRIPTION ET REALISATION</th>
+                      <th>SOCIETE</th>
+                  </tr>
+                  <tr class="table_line">
+                      <td>Jan 2015</td>
+                      <td>Mars 2018</td>
+                      <td>Contrôleur de Gestion</td>
+                      <td>
+                          Déploiement de la stratégie financière définie par la Direction. Contrôle et gestion prévisionnelle des coûts, analyse des écarts
+                      </td>
+                      <td>
+                          BANQUE POPULAIRE
+                      </td>
+                      <td>
+                          <img style="margin-right: 1rem; cursor: pointer;" src="asset/Group 20.png" alt="modifier">
+                          <img src="asset/Group 21.png" style="cursor: pointer;" alt="supprimer">
+                      </td>
+                  </tr>
+                  <tr class="table_line">
+                      <td colspan="5" style="text-align: center; color:#E60028;padding: 20px;">+ AJOUTER</td>
+                  </tr>
+              </table>
+              <div class="form_description">
+                  <div>
+                      <p>
+                          En quelques mots, declinez vos motivations, intérêts et perspectives concernant ce poste:
+                      </p>
+                      <br>
+                      <textarea name="" id="" style="height: 8em;width: 28em;"></textarea>
+                  </div>
+                  <div class="form_description_addfile">
+                      <div class="form_description_addfile_title">
+                          <span>Ajoutez des documents si necessaires:</span>
+                          <button>UPLOAD</button>
+                      </div>
+                      <div class="form_description_addfile_file">
+                          <span>1. TOETC_test_results.pdf</span>
+                          <img height="15px" width="15px" src="asset/Group 21.png" alt="supprimer" srcset="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="button">
+              <input class="button--red" type="button" value="VALIDER">
+              <input class="button--white" type="button" value="SAUVEGARDER LES MODIFICATIONS">
+          </div>
+      </form>
+  </div>
+
+</div>
+
+

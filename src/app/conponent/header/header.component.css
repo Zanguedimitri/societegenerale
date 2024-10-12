@@ -26,13 +26,17 @@
 }
 .header__bottom__menu{
   border: 1px solid black;
+
+}
+.header__bottom__menu th:hover{
+  background-color: red;
+  color: white;
 }
 .header__bottom__menu th{
+
   border: 1px solid #E5E5E5;
   padding: 10px;
   border-bottom: 2px solid black;
   width: 10em;
 }
-.header__bottom__menu th:hover{
-  background-color: #E3E3E3;
-}
+

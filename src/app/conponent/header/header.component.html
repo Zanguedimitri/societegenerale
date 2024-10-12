@@ -16,13 +16,9 @@
   </div>
   <table class="header__bottom" style="width: 100%;" >
       <tr class="header__bottom__menu">
-          <th>
-              <img src="/asset/Shape.png" alt="BOUTIQUE" srcset="">
-          </th>
-          <th>OFFRES DISPONIBLES</th>
-          <th>VOS CANDIDATURES</th>
-          <th>VOTRE CV</th>
-          <th>PARAMETRES</th>
+          @for (menu of menus; track $index) {
+            <th [routerLink]="['/',menu.link]" routerLinkActive="router-link-active" [innerHTML]="menu.name" ></th>
+          }
       </tr>
   </table>
 </header>

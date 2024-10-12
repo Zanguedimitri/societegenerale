@@ -1,0 +1,10 @@
+<div class="box">
+  @for (offre of offres; track $index) {
+      <h3 class="box_type">{{offre.type}}</h3>
+      <h3 class="box_work">{{offre.work}}</h3>
+      <span class="box_city">
+          <img src="asset/placeholder.png" alt="" srcset="">
+          <span>{{offre.city}}</span>
+      </span>
+  }
+</div>

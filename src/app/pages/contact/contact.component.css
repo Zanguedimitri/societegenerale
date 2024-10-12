@@ -1,0 +1,168 @@
+
+/*cadre image*/
+.cadre{
+  position: relative;
+  background-image: url('/../../asset/taylor-grote-415993-unsplash.png');
+  height: 185px;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 60px;
+  margin: 0px 40px 65px 40px;
+}
+.cadre__title{
+  position: absolute;
+  top: 0px;
+  background-color: #E60028;
+  padding: 40px;
+  color: white;
+  left: 220px;
+  height: 130px;
+width: 132px;
+}
+
+
+
+/* css formulaire*/
+.form{
+  width: 50%;
+  margin:10px 0px 10px 60px;
+}
+.form_title{
+  margin-bottom:40px;
+}
+.form_first_title{
+  display: flex ;
+}
+
+.form_first_title :first-child{
+  color: #7F7F7F;
+}
+.form_first_title :last-child{
+  padding-left: 5px;
+}
+
+.form_second_title{
+  display: flex;
+}
+.form_second_title :first-child{
+display: block;
+width: 2px;
+height: 25px;
+background-color: red;
+margin-right: 10px;
+}
+.form_champ{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form_champ--line {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+  padding: 20px;
+}
+.form_champ--line > button{
+  background: #E60028;
+  border-style: none;
+  margin: -9px;
+  padding: 14px;
+  color: white;
+}
+.form_champ--line > input{
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: none;
+  border-left-style: solid;
+  padding-left: 10px;
+  margin: -9px;
+background-color: white;
+}
+.form_champ--rigth{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width:48% ;
+}
+.form_label{
+  color:#8696A6;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.form_input{
+  border-radius: 4px;
+  width: 92%;
+  height: 40px;
+  border-style: solid;
+  outline: none;
+}
+.form_double{
+  display: flex; 
+}
+.table{
+  border-collapse: collapse;
+}
+.table_line{
+  border: 1px solid #F2F2F2;
+  padding:10px;
+  background-color:#F5F7F9;
+}
+.table_line th{
+  padding:10px;
+  color:#8696A6;
+  background-color: white;
+
+}
+.table_line td{
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+
+}
+.table_line:last-child{
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+.form_description{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.form_description_addfile_title > *{
+  padding: 9px;
+}
+.form_description_addfile_title>button{
+  background: #E60028;
+  border-style: none;
+  color: white;
+}
+.form_description_addfile_file{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #F2F2F2;
+  margin-top: 5px;
+}
+.button{
+  text-align: center;
+  border: 1px #F2F2F2 solid;
+  padding: 10px;
+}
+.button--red{
+  padding: 10px;
+  border: none;
+  background-color: #E60028;
+  color: white;
+  cursor: pointer;
+}
+.button--white{
+  padding: 10px;
+  border: 1px solid #A7A7A7;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}

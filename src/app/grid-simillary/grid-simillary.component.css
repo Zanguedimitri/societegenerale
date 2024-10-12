@@ -1,0 +1,30 @@
+
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 95px;
+  width: 650px;
+  margin: 14px;
+  padding: 20px;
+}
+
+.box span{
+  padding: 5px;
+}
+.box_type{
+  color: #E60028;
+  font-size: 17px;
+  padding:5px ;
+
+}
+.box_work{
+font-size: 25px;
+padding:5px ;
+}
+.box_city{
+  display: flex;
+  align-items: center;
+  padding:5px ;
+}

@@ -9,12 +9,26 @@ import { DatePipe } from '@angular/common';
 })
 export class ResponsePipe implements PipeTransform {
   constructor(private datePipe:DatePipe){}
-  transform(application:Application, ...args: unknown[]): unknown {
+  transform(response:string, ...args: unknown[]): unknown {
+    const status =args[0] as string;
+    const date = args[1] as string;
+    const level = args[2] as string;
     const responseMapping :any = {
-      PROGRESS : {0 : {
-        label: `Entretiens le ${this.datePipe.transform(application.interviewDate,'dd/MM/YYYY')}`,
-        color:'blue'
-      }},
+      PROGRESS : {
+        ACCEPTED : {
+            label: `Entretiens le ${this.datePipe.transform(date,'dd/MM/YYYY')}`,
+            color:'blue'
+        },
+        REJECTED : {
+            label: `Entretiens le ${this.datePipe.transform(date,'dd/MM/YYYY')}`,
+            color:'blue'
+        },
+        PENDING : {
+            label: `Entretiens le ${this.datePipe.transform(date,'dd/MM/YYYY')}`,
+            color:'blue'
+        }
+      },
+
       CLOSED: {
         ACCEPTED : {
           label:'Accepté ',
@@ -23,13 +37,30 @@ export class ResponsePipe implements PipeTransform {
         REJECTED : {
           label:'Rejeté',
           color: 'red'
+        },
+        PENDING : {
+          label: 'En attente',
+          color:'blue'
         }
+
       },
-      WAITING:{0:{0:{}}}
+      WAITING:{
+        ACCEPTED : {
+          label: 'Entretiens',
+          color:''
+      },
+      REJECTED : {
+          label: 'Entretiens',
+          color:''
+      },
+      PENDING : {
+        label: 'Entretiens',
+        color:''
+      }
+      }
     }
-    const level:any = args[0] || 0
-    const response = application.hrResponse || 0
-    return responseMapping[application.status][response][level] || '' ;
+
+    return responseMapping[status][response][level] || '' ;
   }
 
 }

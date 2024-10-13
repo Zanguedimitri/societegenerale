@@ -1,10 +1,16 @@
 export interface Application {
   id:number,
   label:string,
-  applyDate:number,
-  interviewDate:number,
+  applyDate:string,
+  interviewDate:string,
   status:'WAITING' | 'PROGRESS' | 'CLOSED',
-  hrResponse :'PENDING' | 'ACCEPTED' | 'REJECTED', 
+  hrResponse : HrResponse,
+}
+
+export enum HrResponse {
+  PENDING = 'PENDING',
+  ACCEPTED = 'ACCEPTED',
+  REJECTED = 'REJECTED',
 }
 
 

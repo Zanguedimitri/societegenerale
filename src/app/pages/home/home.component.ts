@@ -1,3 +1,4 @@
+import { ResponseColorPipe } from './../../pipes/response-color.pipe';
 import { Component} from '@angular/core';
 import { HeaderComponent } from '../../conponent/header/header.component';
 import { FooterComponent } from '../../conponent/footer/footer.component';
@@ -7,6 +8,7 @@ import { ApplicationService } from '../../services/application.service';
 import { CommonModule, DatePipe } from '@angular/common';
 import { StatusPipe } from '../../pipes/status.pipe';
 import { ResponsePipe } from '../../pipes/response.pipe';
+import { ResponseLabelPipe } from '../../pipes/response-label.pipe';
 
 
 
@@ -14,7 +16,10 @@ import { ResponsePipe } from '../../pipes/response.pipe';
   selector: 'app-home',
   standalone: true,
   providers:[DatePipe],
-  imports: [ResponsePipe,HeaderComponent,FooterComponent,GridSimillaryComponent,CommonModule,StatusPipe],
+  imports: [
+    ResponseColorPipe,ResponseLabelPipe,HeaderComponent,
+    FooterComponent,GridSimillaryComponent,CommonModule,StatusPipe
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

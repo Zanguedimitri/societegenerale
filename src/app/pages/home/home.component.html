@@ -8,23 +8,23 @@
   </div>
   <div>
       <table class="table2" style="width: 100%;">
-          
 
-          <tr class="table_item">          
+
+          <tr class="table_item">
               <th># de l'offre</th>
               <th>INTITULÉ de l'offre</th>
               <th>Date de MISE au ligne</th>
               <th>Status de la candidature</th>
               <th>Retour RH</th>
           </tr>
-         
+
           @for (application of applications; track $index) {
             <tr class="table_item">
               <td>{{application.id}}</td>
               <td>{{application.label}}</td>
               <td>{{application.applyDate | date:'dd/MM/YYYY' }}</td>
               <td>{{application | status}}</td>
-              <td class ="'table_item--'{{application | response:'color'}}">{{application | response : 'label'}}</td>
+              <td class ="table_item--{{application.hrResponse| responseColor }}">{{application.hrResponse| responseLabel:application.interviewDate}}</td>
             </tr>
           }
       </table>
